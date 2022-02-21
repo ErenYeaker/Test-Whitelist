@@ -1,0 +1,30 @@
+
+if _G.Key == "Attack-Hub-Key1" then
+elseif _G.Key == "AttackNo1" then
+    
+else
+game.Players.LocalPlayer:Kick("Wrong key")
+end 
+local HWID = {
+    "4C5A678A-2C8E-4AA2-AFCE-800DE471F571",
+    "HWID2",
+    "HWID3"
+ }
+ 
+ local Old = game:GetService("RbxAnalyticsService"):GetClientId()
+ 
+ if game:GetService("RbxAnalyticsService"):GetClientId() ~= Old then
+     while true do end
+ end
+ if HWID[table.find(HWID, Old)] == Old then
+ print("Whitelist")
+ --scripthub
+ else
+     setclipboard("HWID : "..tostring(Old))
+     game.Players.LocalPlayer:Kick("Wrong Hwid Dm Admin!")
+     wait(.5)
+     game:Shutdown()
+ end
+_G.Color = Color3.fromRGB(255, 0, 0)
+_G.Toggle = Enum.KeyCode.RightControl
+loadstring(game:HttpGet("https://raw.githubusercontent.com/ErenYeaker/Attack-Hub/main/ScriptBloxFruits.lua"))()
