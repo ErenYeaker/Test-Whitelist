@@ -7,7 +7,7 @@ game.Players.LocalPlayer:Kick("Wrong key")
 end 
 local HWID = {
     "4C5A678A-2C8E-4AA2-AFCE-800DE471F571",
-    "HWID2",
+    "30D40863-442D-419B-B576-8A742F624177",
     "HWID3"
  }
  
